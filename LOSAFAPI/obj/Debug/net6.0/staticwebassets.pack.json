@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ 100.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ 100.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ agreement.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ agreement.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ application.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ application.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ bc3.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\img\\ bc3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ behavior.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ behavior.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ blockchain.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ blockchain.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ carpenter.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ carpenter.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ ct.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\ ct.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ hero-bg.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\ hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ house-for-sale.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ house-for-sale.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ icons8-login-50.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ icons8-login-50.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ illustration.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ illustration.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ logo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\ logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ pos.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ pos.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ rent.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ rent.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ repair-tools.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ repair-tools.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ server.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ server.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ web-app-development.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ web-app-development.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ wishlist.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ wishlist.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\ wrench.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\ wrench.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\idm.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\idm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\messages-64.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\messages-64.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\prado.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\prado.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\wishlist.png",
+      "PackagePath": "staticwebassets\\uploads\\img\\wishlist.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\LOSAFAPI\\LOSAFAPI\\wwwroot\\uploads\\img\\xceed.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img\\xceed.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.LOSAFAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.LOSAFAPI.props",
+      "PackagePath": "build\\LOSAFAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.LOSAFAPI.props",
+      "PackagePath": "buildMultiTargeting\\LOSAFAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.LOSAFAPI.props",
+      "PackagePath": "buildTransitive\\LOSAFAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
