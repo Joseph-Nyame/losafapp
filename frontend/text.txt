@@ -1,0 +1,2 @@
+ [Route("{id:guid}")]
+        public async Task<IActionResult> GetProduct([FromRoute]Guid id)

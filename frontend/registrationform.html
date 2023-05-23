@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOSAF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url('./img/tech.jpg');">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="./img/img1.jpg" alt="image">
+            </div>
+            <form action="">
+                <h3>Registration Form</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" id="name" class="form-control">
+                    <!-- <input type="text" placeholder="Last Name" class="form-control"> -->
+                </div>
+                <div class="form-wrapper">
+                    <input type="number" placeholder="Phone Number" id ="phone" class="form-control">
+
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" placeholder="Email Address" id="email" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Idname" name="idname" id="idname" value="Ghana Card" readonly class="form-control">
+                    <input type="number" placeholder="IdNumber" id="idnumber" class="form-control">
+                </div>
+
+                <!-- <div class="form-wrapper">
+                    <select name="" id="" class="form-control">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="femal">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div> -->
+                <div class="form-wrapper">
+                    <input type="password" placeholder="Password"  name="password" id="password" class="form-control">
+
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" placeholder="Confirm Password"  name="confirm_password" class="form-control">
+
+                </div>
+                <button id="add-user" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#add-user").click(function (e) {
+        e.preventDefault()
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+        var phone = $("#phone").val();
+        var idname = $("#idname").val();
+        var idnumber = $("#idnumber").val();
+        // var fileInput = document.getElementById('fileInput');
+        // var file = fileInput.files[0];
+
+
+
+        var settings = {
+            "url": "https://localhost:7058/api/User",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify({
+                "Email": email,
+                "Password": password,
+                "Phone": phone,
+                "IDName": "Ghana  Card",
+                "IDNumber": idnumber,
+                "Name": name
+            }),
+        };
+
+        $.ajax(settings).done(function (response) {
+            $.ajax(settings).done(function (response) {
+                var token = response.item1
+                var Email = response.item2.email;
+                sessionStorage.setItem('auth', token);
+                sessionStorage.setItem('Email', Email);
+
+                var parameterEmail = "email";
+                var parameterName = "name";
+                var Name = response.item2.name;
+                var url = 'Member/dashboard.html';
+                var newUrl = url + (url.indexOf('?') >= 0 ? '&' : '?' ? '?' : '?') + parameterName + '=' + Name + '&' + parameterEmail + '=' + Email;
+                window.location.href = newUrl;
+            });
+        });
+
+
+        $("#home").click(function (e) {
+            e.preventDefault()
+            if (sessionStorage.getItem("auth") == null) {
+                window.location.href = 'index.html'
+            }
+            else {
+                window.location.href = 'Member/dashboard.html'
+            }
+        })
+        $("#register-item").click(function (e) {
+            e.preventDefault()
+            if (sessionStorage.getItem("auth") == null) {
+                window.location.href = 'index.html'
+            }
+            else {
+                window.location.href = 'dashboard.html'
+            }
+        })
+        $("#report-item").click(function (e) {
+            e.preventDefault()
+            if (sessionStorage.getItem("auth") == null) {
+                window.location.href = 'index.html'
+            }
+            else {
+                window.location.href = 'dashboard.html'
+            }
+        })
+        $("#message").click(function (e) {
+            e.preventDefault()
+            if (sessionStorage.getItem("auth") == null) {
+                window.location.href = 'index.html'
+            }
+            else {
+                window.location.href = 'dashboard.html'
+            }
+        })
+
+
+
+
+
+    })
+
+    // $("#sign-out").click(function (e) {
+    //     e.preventDefault()
+    //     if (sessionStorage.getItem("auth") != null) {
+    //         sessionStorage.removeItem("auth");
+    //         window.location.href = 'login.html';
+
+    //     }
+    //     else {
+    //         alert('not logged In');
+    //     }
+    // })
+
+</script>
+<script type="text/javascript">
+    $("#sign-out").click(function (e) {
+        // alert('hi')
+        e.preventDefault()
+        if (sessionStorage.getItem("auth") != null) {
+            sessionStorage.removeItem("auth");
+            window.location.href = 'login.html';
+
+        }
+        else {
+            alert('not logged In');
+        }
+    })
+</script>
+
+</html>
